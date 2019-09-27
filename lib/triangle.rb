@@ -29,11 +29,8 @@ class Triangle
   end 
   
   def illegal?
-    if (@side1 == 0 or @side2 == 0 or @side3 == 0) ||
-      true 
-    elsif @side1 > @side2 + @side3   
-      true 
-    end 
+    (@side1 == 0 or @side2 == 0 or @side3 == 0) || (@side1 > (@side2 + @side3))
+    
   end 
   
   class TriangleError < StandardError
