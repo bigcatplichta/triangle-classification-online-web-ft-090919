@@ -9,10 +9,10 @@ class Triangle
   
   def kind 
  
+    raise TriangleError if illegal?
     return :equilateral if equilateral?
     return :isosceles if isosceles?
     return :scalene if scalene?
-    raise TriangleError if illegal?
     
   end 
   
