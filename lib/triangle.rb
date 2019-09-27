@@ -29,7 +29,7 @@ class Triangle
   end 
   
   def illegal?
-    if @side1 == 0 || @side2 == 0 || @side3 == 0
+    if (@side1 == 0 or @side2 == 0 or @side3 == 0) ||
       true 
     elsif @side1 > @side2 + @side3   
       true 
